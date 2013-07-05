@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2013 Matt Lykins
+
+This file is part of Quantized Meal Tracker.
+
+Quantized Meal Tracker is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Quantized Meal Tracker is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Quantized Meal Tracker.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dip"
+    android:background="@drawable/myshape"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvTotalMealsWidget"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="10.5"
+            android:textColor="#33B5E5"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5sp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bAddHalfMealWidget"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/red"
+                android:gravity="center"
+                android:text="-1/2"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/bAddOneMealWidget"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="-1"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/bAddTwoMealsWidget"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/green"
+                android:gravity="center"
+                android:text="-2"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2013 Matt Lykins
+
+This file is part of Quantized Meal Tracker.
+
+Quantized Meal Tracker is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Quantized Meal Tracker is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Quantized Meal Tracker.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="2500"
+        android:key="dayCals"
+        android:summary="Daily Calorie Intake"
+        android:title="Calories"
+        android:inputType="number" />    
+    
+    <EditTextPreference
+        android:defaultValue="5"
+        android:key="dayMeals"
+        android:summary="Meals Per Day"
+        android:title="Meals"
+        android:inputType="number" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="CountDown"
+        android:summary="Check to count down from the starting meals to zero"
+        android:title="Count Downward" />
+
+</PreferenceScreen>
