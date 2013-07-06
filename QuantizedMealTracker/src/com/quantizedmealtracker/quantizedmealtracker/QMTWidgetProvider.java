@@ -29,7 +29,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.RemoteViews;
-import android.widget.Toast;
 
 public class QMTWidgetProvider extends AppWidgetProvider
 {
@@ -103,31 +102,21 @@ public class QMTWidgetProvider extends AppWidgetProvider
 		int[] appWidgetIds = appWidgetManager.getAppWidgetIds(thisAppWidget);
 
 		if (intent.getAction().equals(MainActivity.ACTION_TEXT_CHANGED))
-		{
-			// handle intent here
-			// total = intent.getFloatExtra("WidgetTotal", (float) -1.0);
-			// Bundle extras = intent.getExtras();
-			// if (extras != null)
-			// {
+		{			
 			onUpdate(context, appWidgetManager, appWidgetIds);
-			// }
-
 		}
 		else if (intent.getAction().equals(MainActivity.ACTION_PLUS_HALF))
 		{
-			Toast.makeText(context, "PLUS_HALF", Toast.LENGTH_LONG).show();
 			AddMeals((float) 0.5, context);
 			onUpdate(context, appWidgetManager, appWidgetIds);
 		}
 		else if (intent.getAction().equals(MainActivity.ACTION_PLUS_ONE))
 		{
-			Toast.makeText(context, "PLUS_ONE", Toast.LENGTH_LONG).show();
 			AddMeals(1, context);
 			onUpdate(context, appWidgetManager, appWidgetIds);
 		}
 		else if (intent.getAction().equals(MainActivity.ACTION_PLUS_TWO))
 		{
-			Toast.makeText(context, "PLUS_TWO", Toast.LENGTH_LONG).show();
 			AddMeals(2, context);
 			onUpdate(context, appWidgetManager, appWidgetIds);
 		}
