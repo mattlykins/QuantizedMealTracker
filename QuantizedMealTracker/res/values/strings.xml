@@ -21,7 +21,6 @@ along with Quantized Meal Tracker.  If not, see <http://www.gnu.org/licenses/>.
 
     <string name="app_name">Quantized Meal Tracker</string>
     <string name="action_settings">Settings</string>
-    <string name="_500">500</string>
     <string name="plus_half_meal">+1/2 Meal</string>
     <string name="plus_one_meal">+1 Meal</string>
     <string name="plus_two_meal">+2 Meal</string>

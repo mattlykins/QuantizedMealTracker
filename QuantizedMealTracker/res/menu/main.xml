@@ -26,7 +26,7 @@ along with Quantized Meal Tracker.  If not, see <http://www.gnu.org/licenses/>.
     <item 
         android:id="@+id/about"
         android:orderInCategory="90"
-        android:title="About"/>"
+        android:title="About"/>
     <item
         android:id="@+id/exit"
         android:orderInCategory="100"
